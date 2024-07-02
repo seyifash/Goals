@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+    font-family: Grande;
+    src: url("grande.woff");
+}
+:root {
+    --primaryColor: #FF3147;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Grande, "Quicksand", sans-serif;
+}
