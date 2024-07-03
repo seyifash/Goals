@@ -14,26 +14,33 @@
     list-style: none;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    padding: 1em 0em;
+    width: 80vw;
 }
 
 header h1 {
     color: #FF3147;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: Grande;
 }
 
 .container {
-    margin-top: 15px;
-    width: 70vw;
+    width: 80%;
     height: 85vh;
 }
 
@@ -49,22 +56,44 @@ header img {
     font-weight: 700;
     margin-bottom: 6px;
 }
+.current-info h4 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.current-info h5{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    
+}
+.current-info h6 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    color: #866d70;
+    font-family: Grande;
+}
 
 .goals-container {
     width: 100%;
     border: transparent;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 2rem;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-bottom: 3rem;
 }
 
 .goals-container h2 {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    color: #000;
 }
 
 .goals-container ul {
@@ -76,15 +105,16 @@ header img {
 }
 
 li {
-    width: 26%;
+    width: 28%;
     height: 80px;
     position: relative;
-    font-weight: bolder;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 0.85rem;
     margin: 10px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 20px 10px 20px;
+    line-height: 1.2rem;
 }
 
 li div {
@@ -107,13 +137,16 @@ li div {
 .links {
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
  }
 
-
 .links a {
-    margin: 0px 10px 0px 10px;
     color: black;
-    font-weight: bolder;
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    padding: 0 2rem;
 }
 
 .links a:hover, .links .active {
@@ -132,7 +165,7 @@ li div {
     }
 
     li {
-        width: 40%;
+        width: 45%;
         height: 100px;
     }
 }
@@ -144,23 +177,47 @@ li div {
     
 
     li {
-        width: 35%;
+        width: 45%;
         height: 110px;
+    }
+    .goals-container h2 {
+        font-weight: 400;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
+    header h1, .current-info h4 {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    .current-info h5 {
+        font-size: 1.3rem;
+    }
+
+    .current-info h6 {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
     .goals-container {
         padding: 8px;
     }
-
+    .goals-container h2 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
     li {
-        width: auto;
-        height: 50px;
+        width: 100%;
+        height: 70px;
     }
 
     li div {
         top: 20px;
+    }
+    .links a {
+        padding: 0 0.5rem;
+        font-size: 0.75rem;
     }
 }
 
