@@ -32,9 +32,9 @@ header h1 {
 }
 
 .container {
-    margin-top: 10px;
+    margin-top: 15px;
     width: 70vw;
-    height: 100vh;
+    height: 85vh;
 }
 
 header img {
@@ -76,7 +76,7 @@ header img {
 }
 
 li {
-    width: 27%;
+    width: 26%;
     height: 80px;
     position: relative;
     font-weight: bolder;
@@ -156,6 +156,11 @@ li div {
 
     li {
         width: auto;
+        height: 50px;
+    }
+
+    li div {
+        top: 20px;
     }
 }
 
