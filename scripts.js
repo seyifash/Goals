@@ -1,3 +1,7 @@
+const link1 = document.querySelector('[data-testid="hngLink"]');
+const link2 = document.querySelector('[data-testid="keywordLink"]');
+const link3 = document.querySelector('[data-testid="scrapeanywebLink"]');
+
 document.addEventListener('DOMContentLoaded', function() {
     
     // Set current time in UTC
@@ -24,3 +28,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update the day at midnight
     setInterval(updateDay, 24 * 60 * 60 * 1000); // Update every 24 hours
 });
+
+
+link1.addEventListener('mouseover', (event) => {
+    event.target.classList.add('active');
+
+    link2.classList.remove('active');
+    link3.classList.remove('active');
+})
+
+link2.addEventListener('mouseover', (event) => {
+    event.target.classList.add('active');
+
+    link1.classList.remove('active');
+    link3.classList.remove('active');
+})
+
+link3.addEventListener('mouseover', (event) => {
+    event.target.classList.add('active');
+
+    link1.classList.remove('active');
+    link2.classList.remove('active');
+})
